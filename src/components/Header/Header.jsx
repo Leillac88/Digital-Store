@@ -1,7 +1,7 @@
 import "./Header.css"
 import logo from "../../assets/logo-header.svg"
 import carrinho from "../../assets/mini-cart.svg"
-import lupa from "../../assets/icon-lupa.png"
+import lupa from "../../assets/search.png"
 
 
 export default function Header() {
@@ -36,4 +36,3 @@ export default function Header() {
         </header>
     )
 }
-        
