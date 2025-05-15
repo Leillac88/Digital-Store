@@ -1,0 +1,114 @@
+header {
+  background-color: white;
+  padding: 34px 100px 29px 100px;
+
+  .topo {
+    display: flex;
+    align-items: center;
+
+
+    .logo {
+      font-size: 36px;
+      color: #C92071;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+
+    }
+
+    .buscador {
+
+      flex: 1;
+      background-color: #47474710;
+      border-radius: 8px;
+      margin-left: 27px;
+      margin-right: 48px;
+      display: flex;
+      align-items: center;
+      padding-right: 16px;
+
+
+
+
+      input {
+        width: 100%;
+        height: 60px;
+        background-color: transparent;
+        padding-left: 24px;
+      }
+    }
+
+    .acoes {
+
+      display: flex;
+      align-items: center;
+
+      a {
+
+        color: #474747;
+        text-decoration: underline;
+
+        &:hover {
+          color: #C92071;
+
+        }
+
+        &.btn {
+          width: 114px;
+          margin-left: 30px;
+          margin-right: 70px;
+          text-decoration: none;
+        }
+      }
+
+      .carrinho {
+        position: relative;
+
+        span {
+          min-width: 17px;
+          line-height: 17px;
+          border-radius: 9px;
+          background-color: #ee4266;
+          color: white;
+          font-weight: bold;
+          font-size: 12px;
+          display: block;
+          text-align: center;
+          position: absolute;
+          top: -8px;
+          right: -8px;
+        }
+      }
+
+
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+
+
+    a {
+      color: #474747;
+      transition-duration: 200ms;
+
+      &.active {
+        color: #C92071;
+        font-weight: bold;
+        border-bottom: 2px solid #C92071;
+      }
+
+      &:hover {
+        color: #C92071;
+      }
+
+    }
+
+
+
+  }
+}
