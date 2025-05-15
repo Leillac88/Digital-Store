@@ -1,0 +1,14 @@
+footer {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    padding: 100px 100px 0 100px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo {
+    width: 300px;
+}
