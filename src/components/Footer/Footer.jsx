@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
 
             <div className="sitemap">
-                <div>
+                <div className="info">
                     <h5>Informação</h5>
                     <a href="">Sobre Drip Store</a>
                     <a href="">Segurança</a>
@@ -36,7 +36,7 @@ export default function Footer() {
                     <a href="">Trabalhe conosco</a>
                     <a href="">Meus Pedidos</a>
                 </div>
-                <div>
+                <div className="info">
                     <h5>Categorias</h5>
                     <a href="">Camisetas</a>
                     <a href="">Calças</a>
@@ -44,9 +44,9 @@ export default function Footer() {
                     <a href="">Headphones</a>
                     <a href="">Tênis</a>
                 </div>
-                <div>
+                <div className="info">
                     <h5>Contato</h5>
-                    <a href="">
+                    <a href="https://www.google.com/maps/place/Av.+Santos+Dumont,+1510+-+1+andar+-+Aldeota,+Fortaleza+-+CE,+60150-161/data=!4m2!3m1!1s0x7c7485edb300001:0x6782b2efe8bc747b?sa=X&ved=1t:242&ictx=111" target="_blank">
                         <address>
                             Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE 60150-161
                         </address>

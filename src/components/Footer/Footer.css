@@ -4,11 +4,67 @@ footer {
     padding: 100px 100px 0 100px;
 }
 
-.rodape {
+footer .rodape {
     display: flex;
     justify-content: space-between;
 }
 
-.conteudo {
+footer .rodape .conteudo {
     width: 300px;
+}
+
+footer .rodape .conteudo img {
+    margin-bottom: 35px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+footer .rodape .conteudo img:hover {
+    opacity: 1;
+}
+
+
+footer .rodape .conteudo p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+footer .rodape .conteudo .redes {
+    display: flex;
+    gap: 35px;
+}
+
+footer .rodape .sitemap {
+    display: flex;
+    gap: 50px;
+}
+
+footer .rodape .sitemap .info {
+    width: 170px;
+}
+
+footer .rodape .sitemap .info h5 {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+footer .rodape .sitemap .info a {
+    display: block;
+    color: #FFFFFF;
+    transition-duration: 150ms;
+    margin-bottom: 18px;
+}
+
+footer .rodape .sitemap .info a:hover {
+    color: #C92071;
+}
+
+footer h6 {
+    text-align: center;
+    padding: 22px 0;
+    border-top: 1px solid #ffffff50;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 34px;
 }
