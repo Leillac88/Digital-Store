@@ -2,6 +2,7 @@ import "./Header.css"
 import logo from "../../assets/logo-header.svg"
 import carrinho from "../../assets/mini-cart.svg"
 
+
 export default function Header() {
     return (
         <header>
