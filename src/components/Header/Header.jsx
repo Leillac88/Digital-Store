@@ -1,6 +1,7 @@
 import "./Header.css"
 import logo from "../../assets/logo-header.svg"
 import carrinho from "../../assets/mini-cart.svg"
+import lupa from "../../assets/icon-lupa.png"
 
 
 export default function Header() {
@@ -9,7 +10,6 @@ export default function Header() {
             <div className="topo">
                 <div className="logo">
                     <img src={logo} alt="Digital store logo" />
-                    DIGITAL STORE
                 </div>
 
                 <div className="buscador">
@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
 
                 <div className="acoes">
-                    <a href="">Cadastrte-se</a>
+                    <a href="" className="cadastro">Cadastrte-se</a>
                     <a href="" className="btn">Entrar</a>
                     <div className="carrinho">
                         <img src={carrinho} alt="carrinho" />
@@ -29,9 +29,9 @@ export default function Header() {
 
             <nav>
                 <a href="/" className="active">Home</a>
-                <a href="/Produtos"></a>
-                <a href="/Categorias"></a>
-                <a href="/Meus Pedidos"></a>
+                <a href="/Produtos">Produtos</a>
+                <a href="/Categorias">Categorias</a>
+                <a href="/Meus Pedidos">Meus Pedidos</a>
             </nav>
         </header>
     )
