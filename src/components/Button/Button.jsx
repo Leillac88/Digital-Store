@@ -4,7 +4,7 @@ export default function Button(props) {
       className={`
 
     ${props.color === 'pink' &&
-        'text-[#f5f5f5] bg-[#C92071] hover:bg-[#991956] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed'
+        'text-[#F5F5F5] bg-[#C92071] hover:bg-[#991956] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed w-[900px] h-[32px] py-2 px-10 ml-20 rounded-[8px] transition-colors duration-200 text-center hover:text-white'
         }
     ${props.type === 'link' && 'text-[#C92071] underline'}
 
