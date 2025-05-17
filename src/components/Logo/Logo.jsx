@@ -1,7 +1,5 @@
-import "./Logo.css"
+import logo from '../../assets/logo.png';
 
 export default function Logo() {
-    return (
-        <></>
-    )
+    return <img src={logo} alt="logo" title="Logo Digital Store" />;
 }
