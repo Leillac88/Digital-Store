@@ -1,61 +1,68 @@
-import "./Footer.css"
-import LogoBranco from "../../assets/logo-footer.svg"
-import Facebook from "../../assets/facebook.svg"
-import Instagram from "../../assets/instagram.svg"
-import Twitter from "../../assets/x-twitter.svg"
+import FooterIcons from './FooterIcons.jsx';
+import logo from "../../assets/logobranco.png";
 
 export default function Footer() {
     return (
-        <footer>
-            <div className="rodape">
+        <>
 
-                <div className="conteudo">
-                    <img src={LogoBranco} alt="Logo-rodapé" />
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis qui, nemo atque aliquid
-                        sapiente.</p>
-                    <div className="redes">
-                        <a href="#">
-                            <img src={Facebook} alt="Facebook-logo" />
-                        </a>
-                        <a href="#">
-                            <img src={Instagram} alt="instagram-logo" />
-                        </a>
-                        <a href="#">
-                            <img src={Twitter} alt="twitter-logo" />
-                        </a>
+            <footer className="footer lg:flex-col bg-black pt-6 absolute w-full  ">
+                <div className='flex  flex-col lg:flex-row'>
+                    <div className="conteudo flex m-10 mx-10 justify-between "></div>
+                    <div className='flex gap-24 '>
+                        <div className="sobre gap-2 p-8 text-white">
+                            <div className="logotipo flex items-start gap-2 mb-6">
+                                <img src={logo} alt="" />
+                                <h1 className="digistore font-semibold text-2xl"> Digital Store</h1>
+                            </div>
+                            <p className="descricao w-72 text-white font-normal text-base leading-4 ">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore.
+                            </p>
+                            <FooterIcons />
+                        </div>
+                    </div>
+
+
+                    <div className='flex ml-9  flex-wrap'>
+                        <div className="bloco flex md:gap-32 gap-9 text-white">
+                            <div className="informacao md:py-9 cursor-pointer">
+                                <h1 className="titulo text-lg font-semibold ">Informação</h1>
+                                <p className="texto text-base font-normal">Sobre Drip Store</p>
+                                <p className="texto text-base font-normal">Segurança</p>
+                                <p className="texto text-base font-normal">Wishlist</p>
+                                <p className="texto text-base font-normal">Blog</p>
+                                <p className="texto text-base font-normal">Trabalhe conosco</p>
+                                <p className="texto text-base font-normal">Meus pedidos</p>
+                            </div>
+                            <div className="categorias md:py-9 cursor-pointer ">
+                                <h1 className="titulo text-lg font-semibold">Categorias</h1>
+                                <p className="texto text-base font-normal">Camisetas</p>
+                                <p className="texto text-base font-normal">Calças</p>
+                                <p className="texto text-base font-normal">Bonés</p>
+                                <p className="texto text-base font-normal">Headphones</p>
+                                <p className="texto text-base font-normal">Tênis</p>
+                            </div>
+
+                        </div>
+                        <div className='flex md:ml-32'>
+                            <div className="contato text-lg font-semibold text-white py-9 cursor-pointer ">
+                                <h1 className="titulo font-semibold text-lg cursor-pointer ">
+                                    Contato
+                                </h1>
+                                <p className="local leading-normal w-80 text-base font-normal">
+                                    Av. Santos Dumont, 1510- 1 andar - Aldeota, Fortaleza - CE,
+                                    60150-161
+                                </p>
+                                <p className="text-base font-normal">(85) 3051-3411</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div className="sitemap">
-                    <div className="info">
-                        <h5>Informação</h5>
-                        <a href="">Sobre Drip Store</a>
-                        <a href="">Segurança</a>
-                        <a href="">Wishlist</a>
-                        <a href="">Blog</a>
-                        <a href="">Trabalhe conosco</a>
-                        <a href="">Meus Pedidos</a>
-                    </div>
-                    <div className="info">
-                        <h5>Categorias</h5>
-                        <a href="">Camisetas</a>
-                        <a href="">Calças</a>
-                        <a href="">Bonés</a>
-                        <a href="">Headphones</a>
-                        <a href="">Tênis</a>
-                    </div>
-                    <div className="info">
-                        <h5>Contato</h5>
-                        <a href="https://www.google.com/maps/place/Av.+Santos+Dumont,+1510+-+1+andar+-+Aldeota,+Fortaleza+-+CE,+60150-161/data=!4m2!3m1!1s0x7c7485edb300001:0x6782b2efe8bc747b?sa=X&ved=1t:242&ictx=111" target="_blank">
-                            <address>
-                                Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE 60150-161
-                            </address>
-                        </a>
-                        <a href="tel:8530513411">(85) 3051-3411</a>
-                    </div>
-                </div>
-            </div>
-            <h6>&copy; 2025 Digital College </h6>
-        </footer>
-    )
+                <hr />
+                <span className="dc flex justify-center font-normal py-5 text-white">
+                    @ 2025 Digital College
+                </span>
+            </footer>
+        </>
+    );
 }
