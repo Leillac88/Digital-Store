@@ -1,6 +1,6 @@
 import tShirtCollection from '../../assets/tShirtCollection.png';
 
-import CollectionCard from '../components/CollectionCard';
+import CollectionCard from '../CollectionCard/CollectionCard.jsx';
 import tenisCollection from '../../assets/tenisCollection.png';
 import headPhoneCollection from '../../assets/headPhoneCollection.png';
 import Subtitles from '../Subtitles/Subtitles.jsx';
