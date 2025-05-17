@@ -4,7 +4,7 @@ export default function Button(props) {
       className={`
 
     ${props.color === 'pink' &&
-        'text-[#F5F5F5] bg-[#C92071] hover:bg-[#991956] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed w-[900px] h-[32px] py-2 px-10 ml-20 rounded-[8px] transition-colors duration-200 text-center hover:text-white'
+        'text-[#F5F5F5] bg-[#C92071] hover:bg-[#991956] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed w-[00px] h-[32px] py-2 px-16 ml-20 rounded-lg transition-colors duration-200 text-center hover:text-white'
         }
     ${props.type === 'link' && 'text-[#C92071] underline'}
 
@@ -17,7 +17,7 @@ export default function Button(props) {
         }
 
     ${props.type === 'default' &&
-        'px-9 py-3 w-full sm:w-auto text-sm font-bold leading-5 tracking-wider rounded '
+        'px-16 py-4 w-full sm:w-auto text-base font-bold leading-6 tracking-wider rounded-md '
         }
 
     ${props.type === 'filter' &&
